@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        btn[0] = findViewById(R.id.add);
+       btn[0] = findViewById(R.id.add);
         btn[1] = findViewById(R.id.sub);
         btn[2] = findViewById(R.id.mul);
         btn[3] = findViewById(R.id.div);
@@ -27,8 +27,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                EditText et1=findViewById(R.id.etone);
-                EditText et2=findViewById(R.id.ettwo);
+                EditText et1=findViewById(R.id.first_number);
+                EditText et2=findViewById(R.id.Second_Number);
                 String str1=et1.getText().toString();
                 String str2=et2.getText().toString();
 
@@ -42,8 +42,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                EditText et1=findViewById(R.id.etone);
-                EditText et2=findViewById(R.id.ettwo);
+                EditText et1=findViewById(R.id.first_number);
+                EditText et2=findViewById(R.id.Second_Number);
                 String str1=et1.getText().toString();
                 String str2=et2.getText().toString();
 
@@ -59,8 +59,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                EditText et1=findViewById(R.id.etone);
-                EditText et2=findViewById(R.id.ettwo);
+                EditText et1=findViewById(R.id.first_number);
+                EditText et2=findViewById(R.id.Second_Number);
                 String str1=et1.getText().toString();
                 String str2=et2.getText().toString();
 
@@ -75,8 +75,8 @@ public class MainActivity extends AppCompatActivity {
         btn[3].setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                EditText et1=findViewById(R.id.etone);
-                EditText et2=findViewById(R.id.ettwo);
+                EditText et1=findViewById(R.id.first_number);
+                EditText et2=findViewById(R.id.Second_Number);
                 String str1=et1.getText().toString();
                 String str2=et2.getText().toString();
 
@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), String.valueOf(a/b), Toast.LENGTH_SHORT).show();
 
 
-            }
-        });
+    }
+       });
     }
 }
